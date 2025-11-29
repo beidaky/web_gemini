@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# NEXUS Future Interface
 
-# Run and deploy your AI Studio app
+一个基于原生 JavaScript 和 Tailwind CSS 构建的未来风格交互式网页。无需构建工具，开箱即用。
 
-This contains everything you need to run your app locally.
+## 目录结构
 
-View your app in AI Studio: https://ai.studio/apps/drive/1nchUgYv6_Usx92WTTgbiXKuZHPmCuOqf
+- `index.html`: 入口文件
+- `styles/`: 样式文件
+- `scripts/`: 功能模块 (粒子, 打字机, 滚动, 倾斜效果)
 
-## Run Locally
+## 如何部署到 GitHub Pages
 
-**Prerequisites:**  Node.js
+1. **创建仓库**: 在 GitHub 上创建一个新仓库（例如 `nexus-future`）。
+2. **上传文件**: 将本项目的所有文件直接上传到仓库根目录。
+   - 确保 `index.html` 在根目录下。
+   - 确保 `scripts` 和 `styles` 文件夹完整上传。
+3. **开启 Pages**:
+   - 进入仓库 **Settings** (设置) -> **Pages**。
+   - 在 **Source** 下选择 `Deploy from a branch`。
+   - 在 **Branch** 下选择 `main` (或 `master`) 和 `/ (root)`。
+   - 点击 **Save**。
+4. **访问**: 等待几分钟后，GitHub 会提供一个链接（通常是 `https://你的用户名.github.io/仓库名/`），点击即可访问。
 
+## 本地运行
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+直接双击 `index.html` 或者使用 VS Code 的 "Live Server" 插件打开即可。
+
+## 自定义
+
+- 修改 `scripts/typing.js` 中的 `words` 数组来改变打字机的文本。
+- 修改 `tailwind.config` (在 index.html 中) 来调整主题颜色。
